@@ -6,7 +6,10 @@ public class Student {
 	private int studentId;
 	private String studentName;
 	private LocalDate dateOfBirth;
-	
+	/*private static int studentIdGenerator;
+	static {
+		studentIdGenerator = 100;
+	}*/
 	public LocalDate getDateOfBirth() {
 		return dateOfBirth;
 	}
@@ -18,6 +21,7 @@ public class Student {
 		this.studentId = studentId;
 		this.studentName = studentName;
 		this.dateOfBirth = dateOfBirth;
+		//this.studentId = ++studentIdGenerator;
 	}
 	public int getStudentId() {
 		return studentId;
